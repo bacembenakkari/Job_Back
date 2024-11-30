@@ -11,7 +11,7 @@ import connectDB from './database/db.config.js'; // Import using ES module synta
 
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 4000;
+const port = 4000;
 
 // Middleware
 import notFoundMiddleware from './middleware/not-found.js';
