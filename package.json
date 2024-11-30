@@ -1,0 +1,35 @@
+{
+  "name": "jobify",
+  "version": "1.0.0",
+  "description": "-npm run install-dependencies\r -rename .env.temp to .env \r -setup values for -MONGO_URL , JWT_SECRET, JWT_LIFETIME \r -npm start\r -visit url http://localost:3000/",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server --ignore clientt",
+    "clientt": "npm start --prefix clientt",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run clientt\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.3.0",
+    "jobify": "file:",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.3",
+    "morgan": "^1.10.0",
+    "react-icons": "^5.0.1",
+    "styled-components": "^6.1.8",
+    "validator": "^13.11.0"
+  }
+}
