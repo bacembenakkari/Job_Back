@@ -1,7 +1,7 @@
 // db.config.js
 import mongoose from 'mongoose';
 
-const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/jobify';
+const url = "mongodb+srv://bacembenakkari:Wb9jlyrXrZbZfks4@cluster0.nsmyi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 console.log(url)
 const connectDB = async () => {
     try {
